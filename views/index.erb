@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Yoni's Cryptocurrency Calculator</h1>
+    <table>
+        <tr>
+            <th>Cryptocurrency</th>
+            <th>Luno in Rands</th>
+            <th>Luno Rands converted to USD</th>
+            <th>Coinbase price in USD</th>
+            <th>Percent Difference</th>
+        </tr>
+        <tr>
+            <td>Bitcoin</td>
+            <td id="btc-zar"><%= @btc.to_i %></td>
+            <td id="btc-zar-to-usd"></td>
+            <td id="btc-coinbase"></td>
+            <td><h3 id="btc-difference"></h3></td>
+        </tr>
+        <tr>
+            <td>Ethereum</td>
+            <td id="eth-zar"><%= @eth.to_i %></td>
+            <td id="eth-zar-to-usd"></td>
+            <td id="eth-coinbase"></td>
+            <td><h3 id="eth-difference"></h3></td>
+        </tr>
+        <tr>
+            <td>XRP</td>
+            <td id="xrp-zar"><%= @xrp.to_i %></td>
+            <td id="xrp-zar-to-usd"></td>
+            <td id="xrp-coinbase"></td>
+            <td><h3 id="xrp-difference"></h3></td>
+        </tr>
+    </table>
+    <script src="js/index.js"></script>
+</body>
+</html>
