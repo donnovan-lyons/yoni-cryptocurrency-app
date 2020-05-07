@@ -4,6 +4,7 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-require 'sinatra'
-require 'bitx'
-require 'shotgun'
+# gem "rails"
+gem 'sinatra'
+gem 'bitx'
+gem 'shotgun'
