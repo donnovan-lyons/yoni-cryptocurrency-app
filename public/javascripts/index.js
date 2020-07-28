@@ -1,4 +1,4 @@
-// Needs some serious refactoring
+//create conversion functions
 
 function addUSDConversionBTC(zar, usdRate) {
     let conversion = zar/usdRate
@@ -32,6 +32,8 @@ function addUSDXRP(rate) {
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
+
+    //get zar rates of currencies
     let btcZar = document.getElementById('btc-zar').innerHTML;
     let ethZar = document.getElementById('eth-zar').innerHTML;
     let xrpZar = document.getElementById('xrp-zar').innerHTML;
